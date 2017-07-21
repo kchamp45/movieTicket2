@@ -21,7 +21,13 @@ $(document).ready(function() {
     var inputCategory = parseInt($("#category").val());
     var inputQty = parseInt($("#qty").val());
     var newMovieTicket = new Tickets(inputMovie, inputTime, inputCategory, inputQty);
+
+  $("#name").text(inputMovie);
+  $("#hour").text(inputTime);
+  $("#cat").text(inputCategory);
+  $("#quantity").text(inputQty);
   $("#total").text("$" + newMovieTicket.calcPrice());
+  $("#receipt").show();
 });
 });
 // function Movie(type, price) {
