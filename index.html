@@ -10,15 +10,15 @@
   <body>
     <div class="container">
       <h1>Movie Ticket</h1>
-      <div class="register well">
+      <div class="ticket well">
         <form id="ticket-form">
           <h3>Select a movie:</h3>
           <div class="form-group">
             <select class="form-control" id="title">
-              <option value="old">Aladdin</option>
-              <option value="old">Little Mermaid</option>
-              <option value="old">Wonder Woman</option>
-              <option value="new release">Dunkirk</option>
+              <option value=0>Aladdin</option>
+              <option value=0>Little Mermaid</option>
+              <option value=1>Wonder Woman</option>
+              <option value=2>Dunkirk</option>
             </select>
           </div>
 
@@ -44,7 +44,7 @@
           <div class="form-group">
             <input type=number class="form-control" id="qty">
           </div>
-          <button type="submit" class="btn btn-primary">Register</button>
+          <button type="submit" class="btn btn-primary">Add</button>
         </form>
       </div>
     </div>
