@@ -11,6 +11,13 @@ var initialPrice = 10;
  Tickets.prototype.calcPrice = function() {
   return (initialPrice + this.movie + this.time + this.age) * this.quantity;
  }
+ function resetFields() {
+  $("#title").val("");
+  $("#time").val("");
+  $("#category").val("");
+  $("#qty").val("");
+  $(".form-control").val("");
+}
 
 //UI logic
 $(document).ready(function() {
@@ -29,6 +36,7 @@ $(document).ready(function() {
   $("#total").text("$" + newMovieTicket.calcPrice());
   $("#receipt").show();
 });
+resetFields();
 });
 // function Movie(type, price) {
 //   this.type = [new release, old];
